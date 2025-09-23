@@ -80,8 +80,59 @@ my_dog = Dog("Fido")
 print(my_dog.name)  # prints Fido
 print(my_dog.bark()) # prints Woof!
 
+#You can use string methods
+a = "Hello, World!"
+print(len(a))  # prints 13
+print(a.lower())  # prints hello, world!
+print(a.upper())  # prints HELLO, WORLD!
+print(a.replace("H", "J"))  # prints Jello, World!
+
 #You can use lists and dictionaries
+a = "Hello, World!"
+print(a[1])  # prints e
+
+b = "Hello, World!"
+print(b[2:5])  # prints llo
+print(b.split(","))  # prints ['Hello', ' World!']
+print(b.strip())  # prints Hello, World!
+print(b.startswith("Hello"))  # prints True
+print(b.endswith("!"))  # prints True       
+print(b.find("World"))  # prints 7
+print(b.count("l"))  # prints 3
+print(b.isalpha())  # prints False
+print(b.isdigit())  # prints False
+print(b.islower())  # prints False
+print(b.isupper())  # prints False  
+print(b.isspace())  # prints False
+print(b.title())  # prints Hello, World!
+print(b.capitalize())  # prints Hello, world!
+print(b.center(50))  # prints the string centered in a field of 50 characters
+print(b.encode())  # prints b'Hello, World!'
+print(b.format())  # prints Hello, World!
+print(b.index("World"))  # prints 7 
+print(b.partition(","))  # prints ('Hello', ',', ' World!')
+print(b.rfind("o"))  # prints 8 
+print(b.rindex("o"))  # prints 8
+print(b.rpartition(","))  # prints ('Hello', ',', ' World!')
+print(b.rsplit(","))  # prints ['Hello', ' World!']
+print(b.zfill(20))  # prints 0000000000Hello, World!    
+
 my_list = [1, 2, 3, 4, 5]   
 print(my_list[0])  # prints 1
 my_dict = {"name": "Alice", "age": 30}
 print(my_dict["name"])  # prints Alice
+
+#You can use loops and conditionals
+txt = "The best things in life are free!"
+print("free" in txt, print("Yes, 'free' is present.") if "free" in txt else print("No, 'free' is not present."))
+
+
+
+# Reverse a string without using [::-1]
+def reverse_string(s):
+    rev = ""
+    for char in s:
+        rev = char + rev
+    return rev
+
+print(reverse_string("AI Engineering"))  # prints gnireenignE IA
