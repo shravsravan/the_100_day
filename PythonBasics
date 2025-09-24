@@ -119,6 +119,14 @@ print(b.zfill(20))  # prints 0000000000Hello, World!
 
 my_list = [1, 2, 3, 4, 5]   
 print(my_list[0])  # prints 1
+
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+
+thislist.extend(tropical)
+
+print(thislist)
+
 my_dict = {"name": "Alice", "age": 30}
 print(my_dict["name"])  # prints Alice
 
@@ -126,7 +134,28 @@ print(my_dict["name"])  # prints Alice
 txt = "The best things in life are free!"
 print("free" in txt, print("Yes, 'free' is present.") if "free" in txt else print("No, 'free' is not present."))
 
+#You can use f-strings for formatted strings 
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)  # prints My name is John, I am 36
 
+#You can use the match-case statement
+day = 4 # Thursday
+match day:
+  case 1:
+    print("Monday")
+  case 2:
+    print("Tuesday")
+  case 3:
+    print("Wednesday")
+  case 4:
+    print("Thursday")
+  case 5:
+    print("Friday")
+  case 6:
+    print("Saturday")
+  case 7:
+    print("Sunday")
 
 # Reverse a string without using [::-1]
 def reverse_string(s):
